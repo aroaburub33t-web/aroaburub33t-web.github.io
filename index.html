@@ -53,7 +53,7 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
 
 <header><div class="wrap">
   <h1>Arwa Abu Rub</h1>
-  <p class="lead">IT Associate, Customer Success Engineering, at Aramco Digital (through Sutherland), Eastern Province, Saudi Arabia. I work on data pipelines, Power BI models and internal web portals. Master of AI student at KFUPM. Before this, I built a proof-of-concept Arabic voice agent at MADFU BNPL.</p>
+  <p class="lead">IT Associate, Customer Success Engineering, at Aramco Digital (through Sutherland), Eastern Province, Saudi Arabia. I work on data pipelines, Power BI models and internal web portals and an AI-assisted idea review tool. Master of AI student at KFUPM. Before this, I built a proof-of-concept Arabic voice agent at MADFU BNPL.</p>
   <div class="btns">
     <a class="primary" href="https://github.com/aroaburub33t-web">GitHub</a>
     <a class="ghost" href="https://www.linkedin.com/in/arwa-a-3936b7306">LinkedIn</a>
@@ -64,6 +64,16 @@ footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px soli
 <section id="projects"><div class="wrap">
   <h2>Projects</h2>
 
+  <div class="proj">
+    <img src="img/idea-hub.jpg" alt="Idea Management Hub dashboard with idea counts by board decision and score charts">
+    <div class="body">
+      <h3>Idea Management Hub</h3>
+      <p>Scores employee ideas on a weighted five-KPI matrix, then runs a six-member AI board review: independent parallel Claude calls, a chair who reconciles their verdicts, and a challenge round when the board is split. The board's decision, not the score, becomes the idea's status. Includes prompt-injection fencing, token cost tracking, three report tiers and Excel export.</p>
+      <p>I was technical lead on the internal original. The public version has the company's branding and data removed and runs offline in demo mode.</p>
+      <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>Claude API</span><span>Multi-agent review</span><span>LLM safety</span></div>
+      <a href="https://github.com/aroaburub33t-web/idea-management-hub">View code</a>
+    </div>
+  </div>
 
   <div class="proj">
     <img src="img/kpi-report.jpg" alt="Contact center KPI report with tickets, SLA compliance, answered calls and CSAT cards">
