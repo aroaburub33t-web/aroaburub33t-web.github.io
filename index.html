@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arwa Abu Rub</title>
+<meta name="description" content="Arwa Abu Rub. Data pipelines, Power BI, Arabic voice AI. Eastern Province, Saudi Arabia.">
+<style>
+:root{--ink:#0F172A;--muted:#64748B;--line:#E2E8F0;--accent:#0F766E;--soft:#F0FDFA;--cut:18px 0 18px 0}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:var(--accent)}
+.wrap{max-width:880px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav b{font-size:15px}
+nav .links a{color:var(--muted);text-decoration:none;font-size:14px;margin-left:18px}
+nav .links a:hover{color:var(--ink)}
+header{padding:64px 0 40px}
+h1{font-size:40px;line-height:1.15;margin:0 0 12px;letter-spacing:-.02em}
+.lead{font-size:18px;color:#334155;max-width:640px;margin:0 0 22px}
+.btns a{display:inline-block;text-decoration:none;font-size:14px;font-weight:600;padding:9px 16px;border-radius:12px 0 12px 0;margin:0 8px 8px 0}
+.primary{background:var(--accent);color:#fff}
+.ghost{border:1px solid var(--line);color:var(--ink)}
+section{padding:34px 0;border-top:1px solid var(--line)}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0 0 18px}
+.proj{border:1px solid var(--line);border-radius:var(--cut);overflow:hidden;margin-bottom:20px}
+.proj img{display:block;width:100%;border-bottom:1px solid var(--line)}
+.proj .body{padding:18px 20px}
+.proj h3{margin:0 0 6px;font-size:19px}
+.proj p{margin:0 0 10px;color:#334155}
+.tags span{display:inline-block;font-size:12px;background:var(--soft);color:var(--accent);padding:3px 9px;border-radius:8px 0 8px 0;margin:0 6px 6px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{border:1px solid var(--line);border-radius:var(--cut);padding:16px 18px}
+.card h3{margin:0 0 6px;font-size:16px}
+.card p{margin:0;color:#334155;font-size:15px}
+.job{display:grid;grid-template-columns:150px 1fr;gap:6px 18px;margin-bottom:18px}
+.job .when{color:var(--muted);font-size:14px}
+.job h3{margin:0;font-size:16px}
+.job .org{color:var(--muted);font-size:14px;margin-bottom:4px}
+.job p{margin:0;color:#334155;font-size:15px}
+.skills p{margin:0 0 6px}
+footer{padding:28px 0 48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media(max-width:640px){
+  h1{font-size:30px}.grid{grid-template-columns:1fr}.job{grid-template-columns:1fr}
+  nav .links a{margin-left:12px;font-size:13px}nav .links a.hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Arwa Abu Rub</b><div class="links"><a href="#projects">Projects</a><a href="#work" class="hide-sm">Work</a><a href="#contact">Contact</a></div></div></nav>
+
+<header><div class="wrap">
+  <h1>Arwa Abu Rub</h1>
+  <p class="lead">IT Associate, Customer Success Engineering, at Aramco Digital (through Sutherland), Eastern Province, Saudi Arabia. I work on data pipelines, Power BI models and internal web portals. Master of AI student at KFUPM. Before this, I built a proof-of-concept Arabic voice agent at MADFU BNPL.</p>
+  <div class="btns">
+    <a class="primary" href="https://github.com/aroaburub33t-web">GitHub</a>
+    <a class="ghost" href="https://www.linkedin.com/in/arwa-a-3936b7306">LinkedIn</a>
+    <a class="ghost" href="Arwa_AbuRub_Resume.pdf">CV (PDF)</a>
+  </div>
+</div></header>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+
+
+  <div class="proj">
+    <img src="img/kpi-report.jpg" alt="Contact center KPI report with tickets, SLA compliance, answered calls and CSAT cards">
+    <div class="body">
+      <h3>Contact center KPI pipeline</h3>
+      <p>Turns five raw exports (tickets, SLAs, inbound calls, outbound calls, post-call surveys) into one SQLite database for BI. Counting rules live in code: test lines and short abandons are removed, SLA resets are collapsed, and a survey answer counts only after four checks tie it to a real answered call.</p>
+      <p>Rebuilt on synthetic data from the pipeline I created for my team, which the call center later aligned its official KPI report to.</p>
+      <div class="tags"><span>Python</span><span>pandas</span><span>SQLite</span><span>Data quality</span><span>Power BI ready</span><span>pytest</span></div>
+      <a href="https://github.com/aroaburub33t-web/contact-center-kpi-pipeline">View code</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Arabic voice agent (proof of concept)</h3>
+      <p>Outbound debt collection agent for a BNPL company, tested on live calls. Asterisk, Dialogflow CX, Google STT, ElevenLabs, BigQuery, plus Saudi dialect normalization and a promise-to-pay extractor.</p>
+    </div>
+    <div class="card">
+      <h3>Arabic LLM red teaming</h3>
+      <p>Safety and dialect robustness testing of regional Arabic LLMs with AI Astrolabe, and Arabic dialect data annotation for voice and mobile AI.</p>
+    </div>
+    <div class="card">
+      <h3>Internal portals</h3>
+      <p>Customer Success and Support Services portals plus a call center agent workspace, around 40 internal users including VP leadership. No-code editing, validated data refresh, encrypted sections.</p>
+    </div>
+    <div class="card">
+      <h3>Power BI models</h3>
+      <p>Star-schema models for a CSAT program and a call center, with NPS and quarter-over-quarter views used in board reporting.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="job"><div class="when">Feb 2026 to now</div><div>
+    <h3>IT Associate, Customer Success Engineering</h3><div class="org">Sutherland, placed at Aramco Digital</div>
+    <p>Data pipelines, Power BI and internal portals for the customer success, support services and call center teams. Technical lead on an AI idea evaluation platform. Customer Success Manager for enterprise accounts.</p></div></div>
+  <div class="job"><div class="when">Jan to Apr 2026</div><div>
+    <h3>AI Voice Agent Developer (Intern)</h3><div class="org">MADFU BNPL</div>
+    <p>Proof-of-concept Arabic voice agent for outbound collections, tested on live calls.</p></div></div>
+  <div class="job"><div class="when">Jul to Sep 2025</div><div>
+    <h3>Technology and Product Intern</h3><div class="org">Siolla (fintech)</div>
+    <p>AI chatbot and React prototypes, including a fintech KPI dashboard. UX for a Hajj planning platform.</p></div></div>
+  <div class="job"><div class="when">May to Aug 2024</div><div>
+    <h3>IT and Cybersecurity Intern</h3><div class="org">STC Bank</div>
+    <p>Dynatrace monitoring, automated reports, disaster recovery drills.</p></div></div>
+</div></section>
+
+<section><div class="wrap skills">
+  <h2>Education and skills</h2>
+  <p><b>KFUPM</b>, Master of Artificial Intelligence, in progress (expected 2028)</p>
+  <p><b>Effat University</b>, BSc Computer Science, Cybersecurity, GPA 3.65</p>
+  <p style="margin-top:14px"><b>AI:</b> Python, Claude API, OpenAI, Dialogflow CX, Vertex AI, Hugging Face, prompt engineering</p>
+  <p><b>Data:</b> pandas, SQLite, BigQuery, Power BI (DAX, Power Query)</p>
+  <p><b>Web:</b> Flask, React, JavaScript, Flutter</p>
+  <p><b>Languages:</b> Arabic (native), English (IELTS 8.0)</p>
+</div></section>
+
+<footer id="contact"><div class="wrap">
+  Open to AI engineering and fintech technology roles in the Eastern Province.<br>
+  <a href="mailto:aroaburub33t@gmail.com">aroaburub33t@gmail.com</a> &nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/arwa-a-3936b7306">LinkedIn</a> &nbsp;|&nbsp;
+  <a href="https://github.com/aroaburub33t-web">GitHub</a>
+</div></footer>
+</body>
+</html>
